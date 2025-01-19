@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: ['nuxt-icon'],
@@ -11,9 +10,17 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-        htmlAttrs: {
-          lang: 'en'
-        }
-    }
-  }
+      htmlAttrs: {
+        lang: 'en',
+      },
+      script: [
+        {
+          type: 'module',
+          src: 'https://widget.wantag.com/widget.js',
+          crossorigin: true,
+          'data-project-id': '3',
+        },
+      ],
+    },
+  },
 })
