@@ -13,14 +13,6 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
-      script: [
-        {
-          type: 'module',
-          src: 'https://widget.wantag.com/widget.js',
-          crossorigin: true,
-          'data-project-id': '3',
-        },
-      ],
     },
   },
 })
